@@ -25,6 +25,9 @@ As for features, we’d like to include recommendations, the ability to play one
 <img height="200" alt="image" src="https://github.com/user-attachments/assets/37dc1e67-ffe7-4464-aef6-7eaef8703e8a" />
 <img height="200" alt="image" src="https://github.com/user-attachments/assets/1883f185-e05d-404e-86a3-4ab347e8b93f" />
 
+Figma:
+https://www.figma.com/design/TgjGnVQ3w8SfXYSkv1lJMf/Japanese-Shop?m=auto&t=i0ogVDMAIW2DCphd-1
+
 #### Project authors: MagicalDaniel1, drajan-516
 
 
@@ -57,5 +60,8 @@ As for features, we’d like to include recommendations, the ability to play one
 <img height="200" alt="image" src="https://github.com/user-attachments/assets/6e35fa30-7fb0-40dd-b4e3-5571707d1909" />
 <img height="200" alt="image" src="https://github.com/user-attachments/assets/37dc1e67-ffe7-4464-aef6-7eaef8703e8a" />
 <img height="200" alt="image" src="https://github.com/user-attachments/assets/1883f185-e05d-404e-86a3-4ab347e8b93f" />
+
+Figma:
+https://www.figma.com/design/TgjGnVQ3w8SfXYSkv1lJMf/Japanese-Shop?m=auto&t=i0ogVDMAIW2DCphd-1
 
 #### Авторы проекта: MagicalDaniel1, drajan-516
