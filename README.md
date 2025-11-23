@@ -28,6 +28,9 @@ As for features, we’d like to include recommendations, the ability to play one
 Figma:
 https://www.figma.com/design/TgjGnVQ3w8SfXYSkv1lJMf/Japanese-Shop?m=auto&t=i0ogVDMAIW2DCphd-1
 
+Use cases:
+https://drive.google.com/drive/folders/1YD0irbRVwH_nORgarD3Zh4i5Ioq7sLZQ?usp=sharing
+
 #### Project authors: MagicalDaniel1, drajan-516
 
 
@@ -63,5 +66,8 @@ https://www.figma.com/design/TgjGnVQ3w8SfXYSkv1lJMf/Japanese-Shop?m=auto&t=i0ogV
 
 Figma:
 https://www.figma.com/design/TgjGnVQ3w8SfXYSkv1lJMf/Japanese-Shop?m=auto&t=i0ogVDMAIW2DCphd-1
+
+Use cases:
+https://drive.google.com/drive/folders/1YD0irbRVwH_nORgarD3Zh4i5Ioq7sLZQ?usp=sharing
 
 #### Авторы проекта: MagicalDaniel1, drajan-516
