@@ -1,4 +1,7 @@
-import * as UserApi from "./Features/User/UserApi.js";
+import * as Favorites from "./Features/User/AddFavorites.js";
+import * as UserTemp from "./Features/User/UpdateUserTemp.js";
+import * as UseCart from "./Features/Cart/UseCart.js";
+import * as AddToCart from "./Features/Cart/AddToCart.js";
 
 const ORGANISATION_URL = "http://localhost:3000/api/organisation";
 
@@ -18,22 +21,22 @@ async function test() {
     try {
         const userName = "Annie";
 
-        const cartRes = await UserApi.addToCart(userName, {
+        const cartRes = await AddToCart.addToCart(userName, {
             name: "You're my soda pop",
             price: 20
         });
         console.log("Корзина обновлена:", cartRes);
 
-        const favRes = await UserApi.addFavorite(userName, 1);
+        const favRes = await Favorites.addFavorite(userName, 1);
         console.log("Избранные обновлены:", favRes);
 
-        const tempRes = await UserApi.updateTempInterests(userName, {
+        const tempRes = await UserTemp.updateTempInterests(userName, {
             category1: 0.9,
             category2: 0.8
         });
         console.log("Временные интересы обновлены:", tempRes);
 
-        const getCart = await UserApi.getCart(userName);
+        const getCart = await UseCart.getCart(userName);
         console.log("Корзина:", getCart);
     } catch (err) {
         console.error("Ошибка запроса:", err.message);
