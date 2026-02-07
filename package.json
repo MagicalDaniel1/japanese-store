@@ -1,0 +1,17 @@
+{
+  "name": "japanese-store-main",
+  "version": "1.0.0",
+  "description": "The main idea of the project is to create a visually and functionally comfortable online store in a Japanese style, with products for every taste — from anime merchandise to various delicious foods from the Land of the Rising Sun.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.4",
+    "express": "^5.2.1"
+  }
+}
