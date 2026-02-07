@@ -7,4 +7,4 @@ async function updateUser(name, data) {
     return res.data;
 }
 
-module.exports = updateUser;
+module.exports = {updateUser};
