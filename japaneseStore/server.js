@@ -21,9 +21,10 @@ app.get("/api/organisation", (req, res) => {
     res.status(200).json(storeData);
 });
 
-app.listen(3000, "127.0.0.1", () => {
+app.listen(num, "local host", () => {
     console.log("Server running → your local host");
 });
 
 
 module.exports = app;
+
