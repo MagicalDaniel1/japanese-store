@@ -81,4 +81,70 @@ app.listen(port, "localhost", () => {
     console.log("Server running → your local host");
 });
 
+//user part
+
+app.get("/api/user/:name", (req, res) => {
+    const user = users.find(u => u.name === req.params.name);
+    if (!user) return res.status(404).json({ exists: false });
+
+    res.json({ exists: true, user });
+});
+
+app.post("/api/user", (req, res) => {
+    const { name } = req.body;
+
+    if (!name) {
+        return res.status(400).json({ message: "Name required" });
+    }
+
+    if (users.some(u => u.name === name)) {
+        return res.status(400).json({ message: "User already exists" });
+    }
+
+    const newUser = {
+        name,
+        avatar: null,
+        interests:
+            {
+                drinks: false,
+                drugs: false
+            },
+        temp_interests: {},
+        cart: [],
+        favorites: []
+    };
+
+    users.push(newUser);
+
+    console.log("Создан:", newUser);
+
+    res.status(201).json(newUser);
+});
+
+app.patch("/api/user/:name", (req, res) => {
+    const user = users.find(u => u.name === req.params.name);
+    if (!user) return res.status(404).send("User not found");
+
+    const { name, avatar } = req.body;
+
+    if (name) user.name = name;
+    if (avatar) user.avatar = avatar;
+
+    res.json(user);
+});
+
+app.patch("/api/user/:name/interests", (req, res) => {
+    const user = users.find(u => u.name === req.params.name);
+    if (!user) return res.status(404).send("User not found");
+
+    user.interests = req.body.interests;
+
+    res.json(user);
+});
+
+
+app.listen(port, "localhost", () => {
+    console.log("Server running → your local host");
+});
+
 module.exports = app;
