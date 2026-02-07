@@ -45,6 +45,44 @@ async function test() {
 
 test();
 
+
+const { createUser } = require('./features/User/CreateUser');
+const { updateInterests } = require('./features/User/UpdateIneterests');
+const { getUser } = require('./features/User/GetUser');
+const { updateUser } = require('./features/User/UpdateUser');
+const { updateAvatar } = require('./features/User/UpdateAvatar');
+
+
+(async () => {
+    const result = await createUser('4554');
+    console.log(result);
+})();
+
+(async () => {
+    const result = await updateInterests("4554", {
+        drugs: true,
+        drinks: true
+    });
+
+    console.log(result);
+})();
+
+(async () => {
+    const result = await getUser('4554');
+    console.log(result);
+})();
+
+(async () => {
+    const result = await updateUser('4554', { name: 'drajan' });
+    console.log(result);
+})();
+
+
+(async () => {
+    const updatedUser = await updateAvatar('4554', '/assets/Icon/img.png');
+    console.log(updatedUser);
+})();
+
 // const { createUser } = require("./features/Auth/createUser");
 //
 // (async () => {
@@ -76,5 +114,6 @@ test();
         console.error("Ошибка запроса:", err.message);
     }
 }
+
 
 testServer();*/
