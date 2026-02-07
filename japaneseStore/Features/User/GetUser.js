@@ -7,4 +7,4 @@ async function getUser(name) {
     return res.data;
 }
 
-module.exports = getUser;
+module.exports = {getUser};
