@@ -22,7 +22,8 @@ app.get("/api/organisation", (req, res) => {
 });
 
 app.listen(3000, "127.0.0.1", () => {
-    console.log("Server running → http://127.0.0.1:3000");
+    console.log("Server running → your local host");
 });
+
 
 module.exports = app;
