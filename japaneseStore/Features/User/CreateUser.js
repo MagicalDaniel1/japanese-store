@@ -7,4 +7,4 @@ async function createUser(name) {
     return res.data;
 }
 
-module.exports = createUser;
+module.exports = {createUser};
