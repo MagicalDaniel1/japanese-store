@@ -34,10 +34,8 @@ let products = [
 app.post("/api/user/:name/cart", (req, res) => {
     const user = users.find(user => user.name === req.params.name);
     if (!user) return res.status(404).send("User not found");
-    const product = products.find(product => product.id === req.body.productId);
-    if (!product) return res.status(404).send("Product not found");
-
-    user.cart.push(req.body.product);
+    const product = req.body.product;
+    user.cart.push(product);
     console.log("POST данные:", user);
     res.json({ message: "Товар добавлен в корзину", cart: user.cart });
 });
