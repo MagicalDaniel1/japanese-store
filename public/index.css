@@ -3,13 +3,27 @@
   --bg-light: #f7f8f9;
   --bg-white: #ffffff;
   --text-dark: #000000;
+  --text-dark-gray: #4f4f4f;
   --text-gray: #828282;
   --text-white: #ffffff;
   --text-category: #8d5f73;
 }
 
+.ror-font {
+  font-family: "RocknRoll One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.capriola-regular {
+  font-family: "Capriola", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  font-family: 'Capriola', 'Noto Sans JP', sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   background-color: var(--bg-white);
@@ -48,6 +62,7 @@ button {
   width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 20px;
 }
 
 .header-section {
@@ -72,20 +87,22 @@ button {
 
 .btn-search-trigger {
   background-color: var(--primary-green);
-  border-radius: 5px;
+  border-radius: 30px;
   width: 294px;
   height: 82px;
   display: flex;
   align-items: center;
   padding: 0 20px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
   flex-shrink: 0;
 }
 
 .btn-search-trigger .btn-text {
   color: var(--text-white);
-  font-size: 16px;
+  width: 100%;
+  font-size: 32px;
   font-weight: 700;
+  text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -98,6 +115,18 @@ button {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+i {
+  font-size: 32px;
+}
+
+.green-icon {
+  color: var(--text-white);
+}
+
+.white-icon {
+  color: var(--primary-green);
 }
 
 .search-input-wrapper {
@@ -115,7 +144,7 @@ button {
   width: 100%;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--primary-green);
   font-family: 'Inter', sans-serif;
 }
@@ -172,8 +201,9 @@ button {
 }
 
 .section-title {
+  font-family: "RocknRoll One", sans-serif;
   color: var(--primary-green);
-  font-size: 32px;
+  font-size: 36px;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -219,13 +249,14 @@ button {
 
 .card-text {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .product-title {
   font-size: 24px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: var(--text-dark);
+  color: var(--text-dark-gray)
 }
 
 .product-desc {
@@ -244,7 +275,7 @@ button {
 .price-row {
   display: flex;
   gap: 20px;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--primary-green);
 }
@@ -258,7 +289,7 @@ button {
 .btn-buy {
   background-color: var(--primary-green);
   border-radius: 20px;
-  width: 135px;
+  width: 300px;
   height: 57px;
   display: flex;
   align-items: center;
@@ -277,6 +308,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-heart i {
+  font-size: 48px;
 }
 
 @media (max-width: 768px) {
@@ -402,6 +437,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-white);
+  text-decoration: none;
 }
 
 .footer-items {
