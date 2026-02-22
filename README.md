@@ -28,6 +28,9 @@ As for features, we’d like to include recommendations, the ability to play one
 Figma:
 https://www.figma.com/design/TgjGnVQ3w8SfXYSkv1lJMf/Japanese-Shop?m=auto&t=i0ogVDMAIW2DCphd-1
 
+Hosted:
+https://japanesestore-32228.web.app/
+
 Use cases:
 https://drive.google.com/drive/folders/1YD0irbRVwH_nORgarD3Zh4i5Ioq7sLZQ?usp=sharing
 
