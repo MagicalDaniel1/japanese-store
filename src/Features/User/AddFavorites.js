@@ -1,10 +1,9 @@
-const URL = "http://localhost:3000/api/user";
+const axios = require("axios");
 
-export async function addFavorite(userName, productId) {
-    const res = await fetch(`${URL}/${userName}/favorites`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ productId })
-    })
-    return await res.json();
+const BASE = "http://localhost:3000/api/user";
+
+async function addFavorite(userName, productId) {
+    const res = await axios.put(`${BASE}/${userName}/favorites`, { productId });
 }
+
+module.exports = {addFavorite};

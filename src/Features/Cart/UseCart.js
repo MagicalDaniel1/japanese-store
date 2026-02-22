@@ -1,6 +1,10 @@
-const URL = "http://localhost:3000/api/user";
+const axios = require("axios");
 
-export async function getCart(userName) {
-    const res = await fetch(`${URL}/${userName}/cart`);
-    return await res.json();
+const BASE = "http://localhost:3000/api/user";
+
+async function getCart(userName) {
+    const res = await axios.get(`${BASE}/${userName}/cart`);
+    return res.data;
 }
+
+module.exports = {getCart};

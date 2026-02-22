@@ -7,7 +7,6 @@ async function updateInterests(name, interests) {
         `${BASE}/${name}/interests`,
         { interests }
     );
-    return res.data;
 }
 
 module.exports.updateInterests = updateInterests;

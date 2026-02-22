@@ -1,10 +1,9 @@
-const URL = "http://localhost:3000/api/user";
+const axios = require("axios");
 
-export async function updateTempInterests(userName, tempInterests) {
-    const res = await fetch(`${URL}/${userName}/temp-interests`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ temp_interests: tempInterests })
-    })
-    return await res.json();
+const BASE = "http://localhost:3000/api/user";
+
+async function updateTempInterests(userName, tempInterests) {
+    const res = await axios.patch(`${BASE}/${userName}/temp-interests`, { temp_interests: tempInterests });
 }
+
+module.exports = {updateTempInterests};
