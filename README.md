@@ -7,8 +7,8 @@ If we describe the store’s appearance, it would rather resemble a cozy little 
 As for features, we’d like to include recommendations, the ability to play one of several background songs on the site, comments, product ratings, user profiles, and more.
 
 ## Plan (may be updated)
-- [ ] Base and color scheme
-- [ ] Interface and starting work with CSS
+- [✔] Base and color scheme
+- [✔] Interface and starting work with CSS
 - [ ] Main page, API integration
 - [ ] User profile, age filter upon site entry
 - [ ] Profile editing: adding an avatar, username, changing date of birth
