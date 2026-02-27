@@ -7,8 +7,8 @@ If we describe the store’s appearance, it would rather resemble a cozy little 
 As for features, we’d like to include recommendations, the ability to play one of several background songs on the site, comments, product ratings, user profiles, and more.
 
 ## Plan (may be updated)
-- [✔] Base and color scheme
-- [✔] Interface and starting work with CSS
+[✔] Base and color scheme
+[✔] Interface and starting work with CSS
 - [ ] Main page, API integration
 - [ ] User profile, age filter upon site entry
 - [ ] Profile editing: adding an avatar, username, changing date of birth
@@ -49,8 +49,8 @@ https://drive.google.com/drive/folders/1YD0irbRVwH_nORgarD3Zh4i5Ioq7sLZQ?usp=sha
 Из функций мы хотели бы добавить рекомендации, возможность на сайте включить одну из нескольких предложенных песен, комментарии, рейтинг товаров, возможность создания профиля и так далее.
 
 ## План (может обновляться)
-- [ ] Основа и цвет
-- [ ] Интерфейс и начало роботы с CSS
+[✔] Основа и цвет
+[✔] Интерфейс и начало роботы с CSS
 - [ ] Главная страница, подключение API
 - [ ] Профиль пользователя, фильтр возраста при входе на сайт
 - [ ] Редактирование профиля: добавление аватара, имя пользователя, изменение даты рождения
