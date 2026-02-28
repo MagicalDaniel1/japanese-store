@@ -1,0 +1,18 @@
+.products-section {
+    background-color: transparent;
+}
+
+.section-title {
+    font-family: "RocknRoll One", sans-serif;
+    color: var(--primary-green);
+    font-size: 36px;
+    text-align: center;
+}
+
+.products-grid {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    padding: 20px 40px;
+    justify-content: flex-start;
+}

@@ -1,0 +1,15 @@
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+.ror-font {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.capriola-regular {
+    font-family: "Capriola", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
