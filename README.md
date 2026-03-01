@@ -29,6 +29,7 @@ Figma:
 https://www.figma.com/design/TgjGnVQ3w8SfXYSkv1lJMf/Japanese-Shop?m=auto&t=i0ogVDMAIW2DCphd-1
 
 Hosted:
+https://japanese-store132.netlify.app/
 https://japanesestore-32228.web.app/
 
 Use cases:
