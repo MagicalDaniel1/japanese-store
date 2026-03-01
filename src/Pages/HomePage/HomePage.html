@@ -8,21 +8,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Capriola&family=RocknRoll+One&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="HomePage.css">
-  <link rel="stylesheet" href="../../Shared/UI/Button.css">
-  <link rel="stylesheet" href="../../Features/ProductCard/ProductCard.css">
-  <link rel="stylesheet" href="../../Features/Products/ProductsSection.css">
-  <link rel="stylesheet" href="../../Shared/Styles/Theme.css">
-  <link rel="stylesheet" href="../../Shared/Styles/Utils.css">
-  <link rel="stylesheet" href="../../Shared/Styles/Global.css">
-  <link rel="stylesheet" href="../../Widgets/Header/Header.css">
-  <link rel="stylesheet" href="../../Widgets/Footer/Footer.css">
+<link rel="stylesheet" href="../src/Pages/HomePage/HomePage.css">
+  <link rel="stylesheet" href="../src/Shared/UI/AOSAnimation.css">
+  <link rel="stylesheet" href="../src/Shared/UI/Button.css">
+  <link rel="stylesheet" href="../src/Features/ProductCard/ProductCard.css">
+  <link rel="stylesheet" href="../src/Widgets/ProductCarousel/ProductsCarousel.css">
+  <link rel="stylesheet" href="../src/Widgets/ProductCatalog/ProductsCatalog.css">
+  <link rel="stylesheet" href="../src/Widgets/Banner/Banner.css">
+  <link rel="stylesheet" href="../src/Shared/Styles/Theme.css">
+  <link rel="stylesheet" href="../src/Shared/Styles/Utils.css">
+  <link rel="stylesheet" href="../src/Shared/Styles/Global.css">
+  <link rel="stylesheet" href="../src/Widgets/Header/Header.css">
+  <link rel="stylesheet" href="../src/Widgets/Footer/Footer.css">
 <script src="https://kit.fontawesome.com/ffb2eb8222.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 <div class="header-banner">
-  <img src="../../Shared/Assets/Images/Banners/Banner1.svg">
+  <img src="../src/Shared/Assets/Images/Banners/Banner1.svg">
+  <img data-aos="banner-down" data-aos-delay="100" data-aos-duration="1000" class="banner-element banner-banners" src="../src/Shared/Assets/Images/Banners/Banner1-banners.svg">
 </div>
 
 <header id="section-header" class="header-section">
@@ -61,20 +65,200 @@
   </div>
 </header>
 
-<div>
-  <img class="stroke" src="../../Shared/Assets/Images/Banners/stroke_top.svg" data-aos="slide-left" data-aos-duration="3000">
-  <img class="banner" src="../../Shared/Assets/Images/Banners/Banner2.svg">
-  <img class="stroke" src="../../Shared/Assets/Images/Banners/stroke_bottom.svg" data-aos="slide-left" data-aos-duration="3000" data-aos-offset="-1600" data-aos-delay="100">
-  <h2 class="ror-font" data-aos="fade-right" data-aos-duration="1000" style="position: absolute; bottom: 180px; left: 60px; width: 700px; font-size: 40px; color: white">Special offer! 10% cashback on all product categories</h2>
+<div class="banner-container banner--promo1">
+  <img class="stroke" src="../src/Shared/Assets/Images/Banners/stroke_top.svg" data-aos="slide-left" data-aos-duration="3000">
+  <img class="banner" src="../src/Shared/Assets/Images/Banners/Banner2.svg">
+  <img data-aos="banner-down" data-aos-delay="100" data-aos-duration="1000" class="banner-element banner-banners" src="../src/Shared/Assets/Images/Banners/Banner2-banners.svg">
+  <img class="stroke" src="../src/Shared/Assets/Images/Banners/stroke_bottom.svg" data-aos="slide-left" data-aos-duration="3000" data-aos-offset="-1600" data-aos-delay="100">
+  <h2 class="ror-font banner-element banner-text" data-aos="fade-right" data-aos-duration="1000" style="position: absolute; bottom: 180px; left: 60px; width: 700px; font-size: 40px; color: white">Special offer! 10% cashback on all product categories</h2>
 </div>
 
-<section id="section-products" class="products-section">
+<section class="products-section products-section-carousel">
   <div class="container">
     <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Special discounts</h2>
+    <button class="btn btn--icon btn--white carousel-btn--left btn--special-icon"><i class="fa-solid fa-caret-left"></i></button>
+    <div class="products-carousel" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+      <article class="product-card">
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <button class="btn btn--icon btn--white carousel-btn--right btn--special-icon"><i class="fa-solid fa-caret-right"></i></button>
+  </div>
+</section>
+
+<div class="banner--promo2 banner-container">
+  <img class="stroke" src="../src/Shared/Assets/Images/Banners/stroke_top.svg" data-aos="slide-left" data-aos-duration="3000">
+  <img class="banner" src="../src/Shared/Assets/Images/Banners/Banner3.svg">
+  <img data-aos="banner-down" data-aos-delay="100" data-aos-duration="1000" class="banner-element banner-banners" src="../src/Shared/Assets/Images/Banners/Banner3-banners.svg">
+  <img class="stroke" src="../src/Shared/Assets/Images/Banners/stroke_bottom.svg" data-aos="slide-left" data-aos-duration="3000" data-aos-delay="100" style="position: relative; top: 50%; z-index: -1">
+  <h2 class="ror-font banner-element banner-text" data-aos="fade-right" data-aos-duration="1000" style="position: absolute; bottom: 120px; left: 60px; width: 700px; font-size: 40px; color: white">And products especially for you :3</h2>
+</div>
+
+<section class="products-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Recomended</h2>
     <div class="products-grid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-      <article class="product-card">
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
         <div class="card-image">
-          <img src="../../Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
         </div>
         <div class="card-content">
           <h3 class="product-title">My little soda pop!</h3>
@@ -88,16 +272,16 @@
 
             <div class="card-buttons">
               <button class="btn btn--green btn--wide">Buy</button>
-              <button class="btn btn--icon btn--special-icon btn--white">
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
           </div>
         </div>
       </article>
-      <article class="product-card">
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
         <div class="card-image">
-          <img src="../../Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
         </div>
         <div class="card-content">
           <h3 class="product-title">My little soda pop!</h3>
@@ -111,16 +295,16 @@
 
             <div class="card-buttons">
               <button class="btn btn--green btn--wide">Buy</button>
-              <button class="btn btn--icon btn--special-icon btn--white">
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
           </div>
         </div>
       </article>
-      <article class="product-card">
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
         <div class="card-image">
-          <img src="../../Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
         </div>
         <div class="card-content">
           <h3 class="product-title">My little soda pop!</h3>
@@ -134,16 +318,16 @@
 
             <div class="card-buttons">
               <button class="btn btn--green btn--wide">Buy</button>
-              <button class="btn btn--icon btn--special-icon btn--white">
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
           </div>
         </div>
       </article>
-      <article class="product-card">
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
         <div class="card-image">
-          <img src="../../Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
         </div>
         <div class="card-content">
           <h3 class="product-title">My little soda pop!</h3>
@@ -157,16 +341,16 @@
 
             <div class="card-buttons">
               <button class="btn btn--green btn--wide">Buy</button>
-              <button class="btn btn--icon btn--special-icon btn--white">
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
           </div>
         </div>
       </article>
-      <article class="product-card">
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
         <div class="card-image">
-          <img src="../../Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
         </div>
         <div class="card-content">
           <h3 class="product-title">My little soda pop!</h3>
@@ -180,16 +364,16 @@
 
             <div class="card-buttons">
               <button class="btn btn--green btn--wide">Buy</button>
-              <button class="btn btn--icon btn--special-icon btn--white">
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
           </div>
         </div>
       </article>
-      <article class="product-card">
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
         <div class="card-image">
-          <img src="../../Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
         </div>
         <div class="card-content">
           <h3 class="product-title">My little soda pop!</h3>
@@ -203,7 +387,99 @@
 
             <div class="card-buttons">
               <button class="btn btn--green btn--wide">Buy</button>
-              <button class="btn btn--icon btn--special-icon btn--white">
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" >
+        <div class="card-image">
+          <img src="../src/Shared/Assets/Images/ProductTestImage.png" alt="My little soda pop!" class="product-image">
+        </div>
+        <div class="card-content">
+          <h3 class="product-title">My little soda pop!</h3>
+          <p class="product-desc">You're all I can think of, every drop I drink up. You’re my soda pop, my little soda pop.</p>
+
+          <div class="card-actions">
+            <div class="price-row">
+              <span class="price">00000,00$</span>
+              <span class="discount">0%</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn btn--green btn--wide">Buy</button>
+              <button class="btn btn--icon btn--special-icon btn--white btn--transparent">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
@@ -212,14 +488,13 @@
       </article>
     </div>
   </div>
+  <div class="little-section">
+    <button class="btn btn--icon btn--green" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Show more</button>
+  </div>
 </section>
 
-<div class="banner">
-  <img class="stroke" src="../../Shared/Assets/Images/Banners/stroke_top.svg" data-aos="slide-left" data-aos-duration="3000">
-  <img class="banner" src="../../Shared/Assets/Images/Banners/Banner3.svg">
-  <img class="stroke" src="../../Shared/Assets/Images/Banners/stroke_bottom.svg" data-aos="slide-left" data-aos-duration="3000" data-aos-delay="100" style="position: relative; top: 50%; z-index: -1">
-</div>
-
+<div class="banner--container">
+  <img class="stroke" src="../src/Shared/Assets/Images/Banners/stroke_top.svg" data-aos="slide-left" data-aos-duration="3000"></div>
 <section id="section-footer" class="footer-section">
   <div class="container footer-container">
     <div class="footer-brand">
@@ -230,19 +505,40 @@
         <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
         <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
       </div>
+      <h2>+380 99 067 2351</h2>
     </div>
 
     <div class="footer-items">
-      <h3 class="footer-heading">Items</h3>
       <ul class="footer-list">
-        <li>日本の店</li>
-        <li>日本の店日本の店日本の店日本の店日本の店...</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
+        <li>Category 1</li>
       </ul>
     </div>
   </div>
-  <div class="footer-divider"></div>
 </section>
-</body>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
+
+<script type="module" src="../src/Widgets/ProductCarousel/ProductsCarousel.js"></script>
+<script type="module">
+  import {ProductsCarousel} from "../src/Widgets/ProductCarousel/ProductsCarousel.js";
+
+  document.querySelectorAll('.products-section').forEach((carousel) => {
+    ProductsCarousel(carousel);
+  })
+</script>
+</body>
 </html>

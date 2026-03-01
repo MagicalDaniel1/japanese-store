@@ -38,10 +38,6 @@ button {
     box-shadow: none;
 }
 
-.btn--special-icon {
-    background-color: transparent !important;
-}
-
 .btn--special-icon i {
     font-size: 42px;
 }
@@ -53,6 +49,10 @@ button {
 .btn--white {
     background-color: var(--bg-white);
     color: var(--primary-green);
+}
+
+.btn--transparent {
+    background-color: transparent !important;
 }
 
 .btn--shadow {
@@ -70,6 +70,14 @@ button {
 
 .btn--green:hover {
     background-color: var(--active-purple);
+}
+
+.carousel-btn--left {
+    left: 10px;
+}
+
+.carousel-btn--right {
+    right: 10px;
 }
 
 @media (max-width: 1200px) {

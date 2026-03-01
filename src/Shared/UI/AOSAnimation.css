@@ -1,0 +1,15 @@
+[data-aos="slide-left"] {
+    transform: translateX(-850px);
+}
+
+[data-aos="banner-down"] {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition-property: transform, opacity;
+    opacity: 1;
+}
+
+[data-aos="banner-down"].aos-animate {
+    transform: scaleY(1);
+    opacity: 1;
+}

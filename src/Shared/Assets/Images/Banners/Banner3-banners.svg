@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="1440"
-   height="219.99588"
-   viewBox="0 0 1440 219.99588"
+   height="311.18701"
+   viewBox="0 0 1440 311.18701"
    fill="none"
    version="1.1"
    id="svg12"
-   sodipodi:docname="Banner3.svg"
+   sodipodi:docname="Banner3-banners.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="Banner3-banners.svg"
+   inkscape:export-xdpi="90.242355"
+   inkscape:export-ydpi="90.242355"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,8 +25,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.73472223"
-     inkscape:cx="847.25897"
-     inkscape:cy="42.873346"
+     inkscape:cx="900.34026"
+     inkscape:cy="90.510396"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -33,21 +36,16 @@
   <g
      clip-path="url(#clip0_237_340)"
      id="g12"
-     transform="translate(0,-72.67355)">
+     transform="translate(0,-154.23812)">
     <path
-       d="M -43,72.67355 H 1483 V 292.66943 H -43 Z"
-       fill="#83965f"
-       id="path1"
-       style="stroke-width:0.548216" />
-    <path
-       d="M 919.94197,154.23024 H 1459 v 30.8259 L 919.94197,168.85278 Z"
-       fill="#41342c"
-       id="path5"
+       d="m 1134.1424,154.23024 v 273.17991 l -161.24312,37.4503 V 154.23024 Z"
+       fill="#4f5139"
+       id="path6"
        style="stroke-width:0.790408" />
     <path
-       d="m 1253.494,109.177 c 3.9283,25.45903 28.0832,45.05324 57.2808,45.05324 h 11.1132 c 29.2055,0 53.3525,-19.59421 57.2808,-45.05324 z"
-       fill="#f7f8f9"
-       id="path10"
+       d="m 1357.8278,154.23024 v 273.17991 l -162.824,37.4503 V 154.23024 Z"
+       fill="#f7cf89"
+       id="path7"
        style="stroke-width:0.790408" />
   </g>
   <defs

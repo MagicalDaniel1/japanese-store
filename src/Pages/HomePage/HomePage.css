@@ -1,3 +1,13 @@
-[data-aos="slide-left"] {
-  transform: translateX(-850px);
+.little-section {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background-color: var(--bg-light);
+  margin: 50px 0 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.little-section .btn {
+  width: 300px;
 }

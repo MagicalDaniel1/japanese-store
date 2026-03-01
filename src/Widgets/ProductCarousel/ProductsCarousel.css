@@ -1,0 +1,50 @@
+.products-section {
+    position: relative;
+    background-color: transparent;
+}
+
+.section-title {
+    font-family: "RocknRoll One", sans-serif;
+    color: var(--primary-green);
+    font-size: 36px;
+    text-align: center;
+}
+
+.products-carousel {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 40px;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+}
+
+.products-section-carousel .carousel-btn--left, .products-section-carousel .carousel-btn--right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+}
+
+.products-section-carousel .carousel-btn--left i, .products-section-carousel .carousel-btn--right i {
+    font-size: 72px;
+}
+
+.container {
+    position: relative;
+}
+
+.products-section-carousel::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, var(--bg-white) 0%, transparent 10%, transparent 90%, var(--bg-white) 100%);
+}

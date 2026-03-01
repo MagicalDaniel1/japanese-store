@@ -1,0 +1,39 @@
+.banner-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-element {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+.banner-text {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+.banner--promo2 .banner-banners {
+    z-index: 1;
+    top: 41%;
+}
+
+.banner--promo1 .banner-banners {
+    z-index: 1;
+    top: 59%;
+}
+
+.header-banner .banner-banners {
+    top: 0;
+}

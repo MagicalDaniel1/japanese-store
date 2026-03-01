@@ -9,7 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Capriola&family=RocknRoll+One&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="ErrorPage.css">
+  <link rel="stylesheet" href="../../Shared/UI/AOSAnimation.css">
   <link rel="stylesheet" href="../../Shared/UI/Button.css">
+  <link rel="stylesheet" href="../../Widgets/Banner/Banner.css">
   <link rel="stylesheet" href="../../Shared/Styles/Theme.css">
   <link rel="stylesheet" href="../../Shared/Styles/Utils.css">
   <link rel="stylesheet" href="../../Shared/Styles/Global.css">
@@ -21,30 +23,31 @@
 <body>
 <div class="header-banner">
   <img src="../../Shared/Assets/Images/Banners/Banner1.svg">
+  <img data-aos="banner-down" data-aos-delay="100" data-aos-duration="1000" class="banner-element banner-banners" src="../../Shared/Assets/Images/Banners/Banner1-banners.svg">
 </div>
 
 <header id="section-header" class="header-section">
-    <div class="search-area">
-      <div class="search-controls">
-        <button class="btn btn--search btn--green btn--shadow">Search</button>
+  <div class="search-area">
+    <div class="search-controls">
+      <button class="btn btn--search btn--green btn--shadow">Search</button>
 
-        <button class="btn btn--icon btn--white">
-          <i class="fa-solid fa-filter"></i>
-        </button>
+      <button class="btn btn--icon btn--white">
+        <i class="fa-solid fa-filter"></i>
+      </button>
 
-        <button class="btn btn--icon btn--white">
-          <i class="fa-solid fa-arrow-up-wide-short"></i>
-        </button>
+      <button class="btn btn--icon btn--white">
+        <i class="fa-solid fa-arrow-up-wide-short"></i>
+      </button>
 
-        <input type="text" placeholder="Search" class="search-input">
+      <input type="text" placeholder="Search" class="search-input">
 
-        <button class="btn btn--icon btn--green btn--wide btn--shadow">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </button>
+      <button class="btn btn--icon btn--green btn--wide btn--shadow">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
 
-        <button class="btn btn--icon btn--green btn--wide btn--shadow">
-          <i class="fa-solid fa-user"></i>
-        </button>
+      <button class="btn btn--icon btn--green btn--wide btn--shadow">
+        <i class="fa-solid fa-user"></i>
+      </button>
     </div>
     <div class="categories-list">
       <button class="category-item">Category 1</button>
@@ -59,9 +62,10 @@
   </div>
 </header>
 
-<div>
+<div class="banner-container banner--promo1">
   <img class="stroke" src="../../Shared/Assets/Images/Banners/stroke_top.svg" data-aos="slide-left" data-aos-duration="3000">
   <img class="banner" src="../../Shared/Assets/Images/Banners/Banner2.svg">
+  <img data-aos="banner-down" data-aos-delay="100" data-aos-duration="1000" class="banner-element banner-banners" src="../../Shared/Assets/Images/Banners/Banner2-banners.svg">
   <img class="stroke" src="../../Shared/Assets/Images/Banners/stroke_bottom.svg" data-aos="slide-left" data-aos-duration="3000" data-aos-offset="-1600" data-aos-delay="100">
   <h1 class="ror-font" style="position: absolute; bottom: 220px; left: 60px; font-size: 48px; color: #41342c">O-o-ops... Error 404. Try Again</h1>
 </div>
